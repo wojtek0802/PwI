@@ -84,3 +84,26 @@ h1
 	text-align: center;
 	padding: 20px;
 }
+
+#board
+{
+	width: 906px;
+	height: 756px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	background-color: #0a2b42;
+}
+
+.gameTile
+{
+	float: left;
+	height: 250px;
+	width: 300px;
+	border: 1px solid #008080;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 250px;
+	color: white;
+	font-size: 60px;
+}
