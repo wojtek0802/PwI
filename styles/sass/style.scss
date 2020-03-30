@@ -1,0 +1,134 @@
+$base-color: #393e46;
+$light-color: #00adb5;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, 
+    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+nav {
+    margin-top: 3vh;
+    flex:1;
+}
+
+li {
+    list-style: none;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-link {
+    color: $base-color;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.presentation {
+    margin-top: 3vh;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),url(../images/background.jpg) no-repeat center center fixed;
+    height: 60vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro-text > h1 {
+    color: $light-color;
+    font-size: 48px;    
+}
+
+.intro-text > p {
+    text-align: center;
+    width: 80%;
+    font-size: 20px;
+}
+
+.mainButtons {
+    display: flex;
+    width: 20%;
+    margin: auto;
+    justify-content: space-around;
+    margin-top: 4vh;
+}
+
+.mainProjects, .mainContact {
+    color: $light-color !important;
+    text-transform: uppercase;
+    background: #ffffff;
+    padding: 20px;
+    border: 4px solid $light-color !important;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+  }
+
+.mainProjects:hover, .mainContact:hover {
+    color: $base-color !important;
+    border-radius: 50px;
+    border-color: $base-color !important;
+    transition: all 0.3s ease 0s;
+}
+
+.projects {
+    height: 40vh;
+    padding: 6px;
+}
+
+.project-items {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-items > li { 
+    height: 50px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-items > li:hover { 
+    background-color: #eeeeee;
+    transition: all 0.3s ease 0s;
+}
+
+.project-item {
+    color: $light-color;
+    text-decoration: none;
+}
+
+.footer {
+    text-align: center;
+}
