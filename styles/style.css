@@ -45,15 +45,13 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center; }
-
-.intro-text > h1 {
-  color: #00adb5;
-  font-size: 48px; }
-
-.intro-text > p {
-  text-align: center;
-  width: 80%;
-  font-size: 20px; }
+  .intro-text h1 {
+    color: #00adb5;
+    font-size: 48px; }
+  .intro-text p {
+    text-align: center;
+    width: 80%;
+    font-size: 20px; }
 
 .mainButtons {
   display: flex;
@@ -87,14 +85,13 @@ li {
   display: flex;
   justify-content: space-between; }
 
-.project-items > li {
+.project-items li {
   height: 50px;
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center; }
-
-.project-items > li:hover {
+.project-items li:hover {
   background-color: #eeeeee;
   transition: all 0.3s ease 0s; }
 
