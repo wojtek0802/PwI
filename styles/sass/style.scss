@@ -1,5 +1,5 @@
-$base-color: #393e46;
-$light-color: #00adb5;
+$base-color: #213058;
+$light-color: #f4ae3f;
 
 * {
     margin: 0px;
@@ -7,15 +7,27 @@ $light-color: #00adb5;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, 
     Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 header {
     display: flex;
     width: 90%;
     margin: auto;
+    letter-spacing: 3px;
+    font-weight: 600;
 }
 
 nav {
@@ -44,7 +56,7 @@ li {
         rgba(0, 0, 0, 0.4),
         rgba(0, 0, 0, 0.4)
       ),url(../images/background.jpg) no-repeat center center fixed;
-    height: 60vh;
+    height: 80vh;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -76,63 +88,88 @@ li {
 
 .mainButtons {
     display: flex;
-    width: 20%;
+    width: 40%;
     margin: auto;
     justify-content: space-around;
     margin-top: 4vh;
 }
 
-.mainProjects, .mainContact {
+.mainProjects, .mainContact {   
     color: $light-color !important;
+    text-decoration: none;
+    text-align: center;
+    margin: 5px;
+    cursor: pointer;
+    flex-grow: 1;
     text-transform: uppercase;
-    background: #ffffff;
+    background: linear-gradient(
+        rgba(33, 48, 88, 0.4),
+        rgba(33, 48, 88, 0.4)
+      );
     padding: 20px;
-    border: 4px solid $light-color !important;
+    border: 2px solid $light-color !important;
     border-radius: 6px;
     display: inline-block;
     transition: all 0.3s ease 0s;
+    font-weight: 700;
+
   }
 
 .mainProjects:hover, .mainContact:hover {
-    color: $base-color !important;
+    color: #ffffff !important;
     border-radius: 50px;
-    border-color: $base-color !important;
+    border-color: #ffffff !important;
     transition: all 0.3s ease 0s;
-}
-
-.projects {
-    height: 40vh;
-    padding: 6px;
-}
-
-.project-items {
-    margin-top: 25px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.project-items { 
-    li {
-        height: 50px;
-        flex: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    li:hover { 
-        background-color: #eeeeee;
-        transition: all 0.3s ease 0s;
-    }
-}
-
-
-
-.project-item {
-    color: $light-color;
-    text-decoration: none;
 }
 
 .footer {
     text-align: center;
+}
+
+.projects {
+    padding-top: 40px;
+    padding-bottom: 70px;
+    background-color: #213058;
+
+    h1 {
+        text-align: center;
+        font-size: 32px;
+        letter-spacing: 4px;
+    }
+
+    .projectsContainer {
+        display: flex;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .project {
+            width: 47%;
+            margin-top: 40px;
+            padding:50px;
+            background-color:#28696a;
+
+        }
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .projectsContainer {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .project {
+        width: 98% !important;
+    }
+}
+
+.footerContainer {
+    background-color: #213058;
+    height: 10vh; 
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
