@@ -1,0 +1,111 @@
+body
+{
+	margin: 0;
+	background-color: #c0c0c0 ;
+	color: #000000;
+    font-size: 17px;
+}
+
+h1.logo
+{
+	font-size: 44px;
+	font-weight: 700;
+	color: #000000;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+
+#topnav
+{
+	background-color: #008080;
+	text-align: center;
+}
+
+.menu
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 10px;
+	font-size: 18px;
+	min-height: 38px;
+	line-height: 200%;
+}
+
+.menu > li
+{
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-right: 1px dashed #0a2b42;
+}
+
+.menu > li:first-child
+{
+	border-left: 1px dashed #0a2b42;
+}
+
+.menu a
+{
+	color: #000;
+	text-decoration: none;
+}
+
+.menu a:hover
+{
+	color: #0a2b42;
+}
+
+.mainDiv
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 950px;
+	height: 600px;
+	text-align: center;
+	padding: 0;
+}
+
+h1
+{
+	font-size: 44px;
+	font-weight: 400;
+	color: #008080;
+	margin-bottom: 20px;
+}
+
+
+.info
+{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding: 20px;
+}
+
+#board
+{
+	width: 906px;
+	height: 756px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	background-color: #0a2b42;
+}
+
+.gameTile
+{
+	float: left;
+	height: 250px;
+	width: 300px;
+	border: 1px solid #008080;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 250px;
+	color: white;
+	font-size: 60px;
+}
+
+
