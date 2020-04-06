@@ -99,6 +99,7 @@ a {
       width: 60%; } }
 
 #projects-header {
+  margin-top: 1em;
   letter-spacing: 3px;
   font-size: 40px;
   color: #00adb5;
